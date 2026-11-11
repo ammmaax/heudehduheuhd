@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #14120f;
+  color: #f3ede2;
+  font-family: Segoe UI, sans-serif;
+}
+ 
+main {
+  flex: 1;
+  text-align: center;
+  padding: 40px 5%;
+}
+ 
+/* схема */
+svg {
+  width: 100%;
+  max-width: 700px;
+}
+ 
+line {
+  stroke: #555;
+  stroke-width: 2;
+}
+ 
+circle {
+  stroke: #14120f;
+  stroke-width: 3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.2s;
+}
+ 
+.blue { fill: #7a8cff; }
+.pink { fill: #ff8fa3; }
+.green { fill: #5fd68c; }
+ 
+a:hover circle {
+  transform: scale(1.2);
+}
+ 
+text {
+  fill: #f3ede2;
+  font-size: 16px;
+  text-anchor: middle;
+}
+ 
+a:hover text {
+  fill: #ffc83d;
+}
+ 
+/* друг чи загроза */
+.two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+ 
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px;
+  border-radius: 16px;
+  color: #14120f;
+  text-decoration: none;
+}
+ 
+.card:hover {
+  transform: rotate(-1deg);
+}
+ 
+.good { background: #7be0a1; }
+.bad { background: #ff6b5a; }
+ 
+/* меню і футер */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+ 
+.nav-item a {
+  color: #999;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 4px;
+  background: linear-gradient(#ffc83d, #ffc83d) no-repeat left bottom / 0 2px;
+  transition: 0.3s;
+}
+ 
+.nav-item a:hover,
+.nav-item a.active {
+  color: #fff;
+  background-size: 100% 2px;
+}
+ 
+.nav-item a:hover {
+  transform: translateY(-2px);
+}
+ 
+.footer-inner {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  color: #999;
+}
+ 
+.footer-title,
+.footer-copy {
+  margin: 5px;
+}
